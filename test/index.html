@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_juqery_mobile</title>
+    <style>
+        #box{
+            border: 3px solid black;
+            /* width: 200px;
+            height: 200px; */
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+        
+        }
+    </style>
+
+    <link rel="stylesheet" href="../file/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="../file/jquery-1.11.1.min.js"></script>
+    <script src="../file/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../file/jquery-qrcode-0.17.0.min.js"></script>
+    <script>
+        $(() => {
+            $('#qroced').qrcode({
+                render:'canvas',
+                // text:'姓名：阮子亲<br>电话：188 8888 8888<br>',
+                text:'<a href="http://localhost:8000/JS%e6%a1%86%e6%9e%b6/jQuery%20mobile/test/">点我有惊喜</a>',
+                fill:'green',
+                // background:'pink'   //背景颜色
+            });
+        })
+    </script>
+</head>
+<body>
+    <div data-role = 'page'>
+        <!-- 弹窗 -->
+        <div data-role = 'popup' id = 'qroced'>
+            
+        </div>
+        <div data-role = "header" data-theme = ''>
+            <h1>川信商城</h1>
+            <a href="" class = 'ui-btn ui-icon-carat-l ui-btn-icon-notext'>返回</a> 
+            <a 
+                href="#qroced" 
+                class = 'ui-btn ui-icon-camera ui-btn-icon-notext' 
+                data-rel = 'popup' 
+                data-position-to="window"
+                data-transition ='flip'
+            >
+                扫码
+            </a>
+        </div>
+        <div data-role = "main" class = 'ul-content'>
+            <ul>
+                <li>中间内容列表1</li>
+                <li>中间内容列表2</li>
+                <li>中间内容列表3</li>
+                <li>中间内容列表4</li>
+                <li>中间内容列表5</li>
+                <li>中间内容列表6</li>
+                <li>中间内容列表7</li>
+                <li>中间内容列表8</li>
+                <li>中间内容列表9</li>
+                <li>中间内容列表10</li>
+                <li>中间内容列表11</li>
+                <li>中间内容列表12</li>
+                <li>中间内容列表13</li>
+                <li>中间内容列表14</li>
+                <li>中间内容列表15</li>
+                <li>中间内容列表16</li>
+                <li>中间内容列表17</li>
+                <li>中间内容列表18</li>
+                <li>中间内容列表19</li>
+                <li>中间内容列表20</li>
+                <li>中间内容列表21</li>
+                <li>中间内容列表22</li>
+                <li>中间内容列表23</li>
+                <li>中间内容列表24</li>
+                <li>中间内容列表25</li>
+                <li>中间内容列表26</li>
+                <li>中间内容列表27</li>
+                <li>中间内容列表28</li>
+                <li>中间内容列表29</li>
+                <li>中间内容列表30</li>
+                <li>中间内容列表31</li>
+                <li>中间内容列表32</li>
+                <li>中间内容列表33</li>
+                <li>中间内容列表34</li>
+                <li>中间内容列表35</li>
+                <li>中间内容列表36</li>
+                <li>中间内容列表37</li>
+                <li>中间内容列表38</li>
+                <li>中间内容列表39</li>
+                <li>中间内容列表40</li>
+                <li>中间内容列表41</li>
+                <li>中间内容列表42</li>
+                <li>中间内容列表43</li>
+                <li>中间内容列表44</li>
+                <li>中间内容列表45</li>
+                <li>中间内容列表46</li>
+                <li>中间内容列表47</li>
+                <li>中间内容列表48</li>
+                <li>中间内容列表49</li>
+                <li>中间内容列表50</li>
+            </ul>
+            <ul data-role = "listview">
+                <li>
+                    <a href="#">
+                        <img src="../img/1.jpg">
+                        <h2>Prime_rzq</h2>
+                        <p>热爱漫无边际，生活自有分寸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/1.jpg">
+                        <h2>Prime_rzq</h2>
+                        <p>热爱漫无边际，生活自有分寸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/1.jpg">
+                        <h2>Prime_rzq</h2>
+                        <p>热爱漫无边际，生活自有分寸</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../img/1.jpg">
+                        <h2>Prime_rzq</h2>
+                        <p>热爱漫无边际，生活自有分寸</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role = "footer" data-position = 'fixed' data-theme = 'b'>
+            <div data-role = 'navbar'>
+                <ul>
+                    <li><a href="" data-icon = 'home'>首页</a></li>
+                    <li><a href="" data-icon = 'shop'>商城</a></li>
+                    <li><a href="" data-icon = 'comment'>动态</a></li>
+                    <li><a href="" data-icon = 'user'>我的</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        //一般数据以json格式进行交换，特别适合多平台交互数据
+        // 使用jQuery的Ajax读取网易云音乐
+        $.get({
+            url:"http://musicapi.leanapp.cn/personalized?limit=5",
+            dataType:"json",
+            data:'',
+            success: function(res){
+                // alert(res);
+                // 清空原有数据
+                $('#musicList').html('')
+                //使用循环读取元辰给传递的数据
+                $('#musicList').append(`
+                    <li><a>
+                        <img src = '${m.picUrl}'>
+                        <h2>${m.name}</h2>
+                        <p>${m.playCount}</p>
+                    </a></li>
+                `)
+            },
+            error: function(err){
+                // console.log(err);
+                // 清空原有数据
+                $('#musicList').html('')
+            }
+
+        })
+    </script>
+</body>
+</html>
